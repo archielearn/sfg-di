@@ -1,17 +1,5 @@
 package guru.springframework.sfgdi.config;
 
-<<<<<<< Updated upstream
-import guru.springframework.sfgdi.services.*;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
-import org.springframework.context.annotation.Profile;
-import org.springframework.stereotype.Service;
-
-@Configuration
-public class GreetingServiceConfig {
-
-=======
 import com.springframework.pets.PetService;
 import com.springframework.pets.PetServiceFactory;
 import guru.springframework.sfgdi.repositories.EnglishGreetingRepository;
@@ -43,31 +31,17 @@ PetService dogPetService(PetServiceFactory petServiceFactory){
 
 
 
->>>>>>> Stashed changes
     @Primary
     @Bean
     PrimaryGreetingService primaryGreetingService(){
 
         return new PrimaryGreetingService();
     }
-<<<<<<< Updated upstream
-    @Bean
-=======
     //@Bean
->>>>>>> Stashed changes
     ConstructorGreetingService constructorGreetingService(){
 
         return new ConstructorGreetingService();
     }
-<<<<<<< Updated upstream
-
-
-    @Bean("i18nService")
-    @Profile("EN")
-    I18nEnglishGreetingService i18nEnglishGreetingService(){
-
-        return new I18nEnglishGreetingService();
-=======
     @Bean
     EnglishGreetingRepository englishGreetingRepository(){
         return new EnglishGreetingRepositoryImpl() ;
@@ -78,7 +52,6 @@ PetService dogPetService(PetServiceFactory petServiceFactory){
     I18nEnglishGreetingService i18nEnglishGreetingService(EnglishGreetingRepository englishGreetingRepository){
 
         return new I18nEnglishGreetingService(englishGreetingRepository);
->>>>>>> Stashed changes
     }
 
 
@@ -89,11 +62,8 @@ PetService dogPetService(PetServiceFactory petServiceFactory){
         return new I18nSpanishGreetingService();
     }
 
-<<<<<<< Updated upstream
-=======
 
 
->>>>>>> Stashed changes
 @Bean
     PropertyInjectedGreetingService propertyInjectedGreetingService(){
 
