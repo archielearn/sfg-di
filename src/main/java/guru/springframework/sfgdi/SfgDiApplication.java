@@ -6,7 +6,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
+<<<<<<< Updated upstream
 @ComponentScan(basePackages = {"guru.springframework.sfgdi","com.springframework.pets"})
+=======
+//@ComponentScan(basePackages = {"guru.springframework.sfgdi","com.springframework.pets"})
+>>>>>>> Stashed changes
 @SpringBootApplication
 public class SfgDiApplication {
 

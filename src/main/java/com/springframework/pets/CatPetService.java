@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream:src/main/java/com/springframework/pets/CatPetService.java
 package com.springframework.pets;
 
 import org.springframework.context.annotation.Profile;
@@ -14,3 +15,21 @@ public class CatPetService implements PetService {
         return "Cats Are the Best!";
     }
 }
+=======
+package com.springframework.pets;
+
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Service;
+
+/**
+ * Created by jt on 12/28/19.
+ */
+/*@Service
+@Profile("cat")*/
+public class CatPetService implements PetService {
+    @Override
+    public String getPetType() {
+        return "Cats Are the Best!";
+    }
+}
+>>>>>>> Stashed changes:src/main/java/guru/springframework/sfgdi/services/CatPetService.java
