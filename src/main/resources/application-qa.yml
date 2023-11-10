@@ -1,0 +1,7 @@
+spring:
+  profiles:
+    active: dog,ES
+archit:
+  username: ymlusernameQA
+  password: ymlpasswordQA
+  jdbcurl: ymljdbcurlQA
